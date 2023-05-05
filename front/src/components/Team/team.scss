@@ -1,0 +1,57 @@
+@import 'src/styles/vars';
+
+.team {
+  padding: 0 1em;
+  .member {
+    border: 2px dotted #fff;
+    padding: 0.5em;
+    margin-bottom: 1em;
+
+    .member-role {
+      padding-top: 0.5em;
+      font-style: italic;
+      display: flex;
+      flex-direction: column;
+      color: $linkColor;
+    }
+
+    .member-name{
+      font-size: 0.40em;
+      font-weight: bold;   
+    }
+
+    .member-description {
+      padding-top: 0.5em;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 768px){
+  .team{
+    padding: 0 2em;
+  }
+  
+}
+
+@media screen and (min-width: 1024px) {
+  .team {
+    padding: 0;
+    width: 900px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .team {
+    width: 1300px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .team {
+    width: 1600px;
+    margin: auto;
+  }
+}

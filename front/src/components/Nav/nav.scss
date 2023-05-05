@@ -1,0 +1,39 @@
+@import 'src/styles/vars';
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: $baseSize * 5;
+  padding-bottom: 100vh;
+  color: #fff;
+
+  .nav-item {
+    padding: $baseSize;
+    font-size: 1.5em;
+    &:hover {
+      background-color: #fff;
+      color: $backgroundColor;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .nav { 
+    margin-bottom: auto; 
+    display: flex;
+    flex-direction: row;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .nav-symbol {
+      display: none;
+    }
+
+    .nav-item {
+      padding: 0em;
+      margin-left: $baseSize;
+      font-size: 1em;
+    }
+  }
+}

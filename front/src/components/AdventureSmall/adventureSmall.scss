@@ -1,0 +1,59 @@
+@import 'src/styles/vars';
+
+.adventureSmall {
+  border: 2px dotted #fff;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  width: 100%;
+  overflow-wrap: break-word;
+  &:hover {
+    /* border-color: $noticeColor; */
+    border-style: solid;
+  }
+
+  .adventureSmall-title {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .adventureSmall-authorAndDate {
+    padding-top: 0.5em;
+    font-style: italic;
+    font-size: 0.8em;
+    
+    .adventureSmall-author {
+      padding-right: 0.3em;
+    }
+
+    .adventureSmall-date::before {
+      content: 'le';
+      padding-right: 0.3em;
+    }
+  }
+
+  .adventureSmall-synopsis {
+    padding-top: 0.5em;
+
+  }
+
+  .adventureSmall-link {
+    margin-top: 0.5em;
+    color: $linkColor;
+    width: fit-content;
+    &:hover {
+      background-color: $linkColor;
+      color: #1d1e22;
+    }
+  }
+  
+}
+
+.creationAdventure {
+  border: 3px solid $noticeColor;
+
+  .adventureSmall-title
+  {
+    color: $noticeColor;
+    text-transform: uppercase;
+  }
+}

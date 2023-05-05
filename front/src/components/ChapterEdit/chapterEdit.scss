@@ -1,0 +1,61 @@
+@import 'src/styles/vars';
+
+.chapterEdit{
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  .chapterEdit-parentChapter{
+    background-color: $darkBorderColor;
+    border-style: hidden;
+    padding: 0.8em 1em;
+    color: $lightColor;
+    font-size: $baseFontSize;
+    font-family: $family;
+    margin-left:0.5em;
+    margin-top: 1em;
+
+    
+  }
+}
+.errorMessage, .validationError {
+  margin-top: 0.5em;
+  background: $warningColor ;
+  color: black;
+  padding: 1em;
+}
+
+.chapterEdit-Button{
+  border: 1px dashed #6BE145;
+  color: #6BE145;
+  padding: 1em 2em;
+  background-color:#1D1E22;
+  margin-top: 1em;
+  font-weight: bold;
+  border-radius: 2px;
+  margin-bottom:2em ;
+  width: 100%;
+
+  &:hover{
+   background-color:#6BE145;
+   color: #1D1E22;
+  }
+}
+
+.storyEdit{
+  padding: 0 1em;
+  .storyEdit-form-editChoice{
+    background-color: $darkBorderColor;
+    border-style: hidden;
+    padding: 0.8em 1em;
+    color: $lightColor;
+    font-size: $baseFontSize;
+    font-family: $family;
+    margin-left:0.5em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .storyEdit {
+    padding: 0 2em;
+  }
+}

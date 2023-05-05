@@ -1,0 +1,98 @@
+@import 'src/styles/vars';
+
+.adventure {
+ padding: 1em;
+ overflow-wrap: break-word;
+  .adventure-title {
+    font-weight: bold;
+  }
+  .unactive-storyTitle {
+    text-decoration: line-through;
+  }
+
+  .adventure-metas {
+    
+    .adventure-author {
+      padding-right: 0.3em;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .adventure-partyTime{
+      font-style: italic;
+      margin-top: 0.5em;
+      border-left: 2px solid $lightScreenColor;
+      padding-left: 0.5em;
+    }
+    
+    .adventure-date::before {
+      content: 'le';
+      padding-right: 0.3em;
+    }
+  }
+
+  .adventure-description {
+    padding-top: 0.5em;
+
+  }
+  
+  .adventure-links {
+    padding-top: 0.5em;
+    color: $linkColor;
+    .adventure-link {
+      margin: 0 0.25em;
+      &:hover {
+        cursor: pointer;
+        color: $backgroundColor;
+        background-color: $linkColor;
+      }
+    }
+    .adventure-link-warning {
+      color: $noticeColor;
+      &:hover {
+        cursor: not-allowed;
+      }
+    }
+    .delete-link {
+      color: $warningColor;
+      &:hover {
+        background-color: $warningColor;
+        color: $backgroundColor;
+      }
+    }
+
+    .confirmation-delete-link {
+      margin-right: 0;
+      &:hover {
+        background-color: $backgroundColor;
+        color: $warningColor;
+      }
+    }
+
+    .active-delete {
+      display: none;
+    }
+    
+  } 
+}
+
+@media screen and (min-width: 1024px) {
+  .adventure {
+    width: 900px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .adventure {
+    width: 1300px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .adventure {
+    width: 1600px;
+    margin: auto;
+  }
+}

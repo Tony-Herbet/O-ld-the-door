@@ -1,0 +1,133 @@
+@import 'src/styles/vars';
+
+.login-form {
+  padding: 0 1em 1em 1em;
+}
+.login-email{
+  margin-top: 1em;
+}
+
+.form {
+  width: 80%;
+  margin: 0 auto;
+  border: 3px dashed #fff;
+  padding: 1em;
+ 
+}
+
+.login-header{
+  width: 100%;
+  background:#6BE145;
+  color:#1D1E22;
+  padding: 1em;
+}
+
+.blink{
+  animation-name:  blinker;
+  animation-iteration-count: 3;
+  animation-duration: 1s;
+}
+ /*Definition of what blink animation does */
+@keyframes blinker {
+   
+  50%{
+    opacity: 0;
+  }
+ 
+}
+
+.login-input{
+  display:flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.infos{
+  margin-top: 0.5em;
+}
+.infos-warning{
+  margin-top: 0.5em;
+  background: $warningColor ;
+  color: black;
+  padding: 1em;
+}
+
+
+.input{
+ background: #1D1E22;
+ margin-left: 5px;
+ color:#6BE145;
+ font-size: 1em;
+}
+
+
+.button-submit {
+  border: 1px dashed #6BE145;
+  color: #6BE145;
+  padding: 1em 2em;
+  background-color:#1D1E22;
+  margin-top: 2em;
+  font-weight: bold;
+  border-radius: 2px;
+  width: 100%;
+
+  &:hover{
+   background-color:#6BE145;
+   color: $backgroundColor;
+  }
+}
+
+.connexion-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+  
+  .link-home {
+    color: $linkColor;
+
+    &:hover {
+      background-color: $linkColor;
+      color: $backgroundColor;
+    }
+  }
+  
+  .inscription-text {
+    padding-top: 1em;
+    font-style: italic;
+    color: #fff;
+    font-size: 0.7em;
+    text-align: center;
+    width: 70%;
+  }
+
+  .link-inscription {
+    color: $linkColor;
+  
+    &:hover {
+      background-color: $linkColor;
+      color: $backgroundColor;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1024px){
+  .form{
+    width: 600px;
+   
+  }
+  .infos{
+    margin-bottom: 1em;
+  }
+
+}
+
+@media only screen and (max-width: 550px){
+  .login-input{
+    display:flex;
+    flex-direction: column;
+  }
+}

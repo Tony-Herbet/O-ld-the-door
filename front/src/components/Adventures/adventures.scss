@@ -1,0 +1,52 @@
+@import 'src/styles/vars';
+
+.adventures {
+  padding: 0 1em;
+  .adventures-create-link {
+    padding-top: 0.5em;
+    text-decoration: underline;
+    color: $linkColor;
+  }
+
+  .adventureSmall-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+}
+
+
+@media screen and (min-width: 768px) {
+  .adventures {
+    padding: 0 2em;
+    .adventureSmall-container {
+      align-items: flex-start !important;
+      flex-direction: row !important;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .adventures {
+    width: 900px;
+    margin: auto;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .adventures {
+    width: 1300px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .adventures {
+    width: 1600px;
+    margin: auto;
+  }
+}

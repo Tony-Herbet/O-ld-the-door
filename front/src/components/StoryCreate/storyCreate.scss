@@ -1,0 +1,48 @@
+@import 'src/styles/vars';
+
+.storyCreate {
+  padding: 0 1em;
+  margin-bottom: 1em;
+  
+  .storyCreate-form {
+    display: flex;
+    flex-direction: column;
+
+    .storyCreate-form-button {
+    border: 1px dashed #6BE145;
+    color: #6BE145;
+    padding: 1em 2em;
+    background-color:#1D1E22;
+    margin-top: 2em;
+    font-weight: bold;
+    border-radius: 2px;
+
+        &:hover{
+      background-color:#6BE145;
+      color: #1D1E22;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .storyCreate {
+    padding: 2em 0;
+    width: 900px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .storyCreate {
+    width: 1300px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .storyCreate {
+    width: 1600px;
+    margin: auto;
+  }
+}

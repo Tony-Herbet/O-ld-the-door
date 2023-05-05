@@ -1,0 +1,80 @@
+@import 'src/styles/vars';
+
+.storyEdit-form {
+  display: flex;
+  flex-direction: column;
+}
+.storyEdit-Button{
+  border: 1px dashed #6BE145;
+    color: #6BE145;
+    padding: 1em 2em;
+    background-color:#1D1E22;
+    margin-top: 1em;
+    font-weight: bold;
+    border-radius: 1px;
+    margin-bottom: 2em;
+    width: 100%;
+
+        &:hover{
+      background-color:#6BE145;
+      color: #1D1E22;
+      }
+}
+.storyEdit-link {
+  &:hover{
+    background-color:#6BE145;
+    color: #1D1E22;
+  }
+}
+
+.architecture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+  a {
+    margin-bottom: 0.5em;
+  }
+  .architecture-link {
+    margin-bottom: 0.5em;
+    display: flex;
+    align-items: center;
+    &:hover {
+      color: $backgroundColor;
+      background-color: $lightColor;
+      cursor: pointer;
+    }
+  }
+  .architecture-subtitle {
+    background-color: $backgroundColor;
+    color: white;
+    margin-top: 0.5em;
+  }
+  .architecture-details {
+    background-color: white;
+    color: $backgroundColor;
+    padding: 0.5em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .storyEdit {
+    padding: 0;
+    width: 900px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .storyEdit {
+    width: 1300px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .storyEdit {
+    width: 1600px;
+    margin: auto;
+  }
+}
